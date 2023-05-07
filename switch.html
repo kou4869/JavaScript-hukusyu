@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <script>
-      window onload = function() {
+      window.onload = function () {
         let str = "";
         let day = new Date().getDay();
         switch (day) {
@@ -29,13 +29,11 @@
             str = "土";
             break;
         }
-        document.getElementById("day").textContent = "str";
+        document.getElementById("day").textContent = str;
       };
     </script>
   </head>
-
   <body>
     <h1>今日は<span id="day"></span>曜日</h1>
   </body>
-
 </html>
